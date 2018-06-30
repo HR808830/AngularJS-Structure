@@ -1,0 +1,118 @@
+
+<!-- <div appHeader>
+  
+</div>
+ -->
+<header ng-include="'pages/header/header.html'"></header>
+ <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container">
+
+                    <!-- Page-Title -->
+                    <div class="row m-b-15">
+                        <div class="col-sm-12">
+                            <h4 class="page-title">Topic Management</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card-box">
+                                <h4 class="text-dark header-title m-b-15">Topic Of The Week</h4>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <button class="btn btn-lg btn-primary waves-effect waves-light" data-toggle="modal" data-target="#add-topic-modal">Add Topic</button>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="alert alert-success">
+                                            <strong>Topic Name </strong> is topic of the week for Date Start To Date End
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+                            <h4 class="text-dark header-title">List Of Topics</h4>
+                            <div class="p-20">
+                                <table class="table table table-hover m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Topic Name</th>
+                                            <th>Created Date</th>
+                                            <th>End Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Information Technology</td>
+                                            <td>18-March-2018</td>
+                                            <td>24-March-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Machine Learning</td>
+                                            <td>26-March-2018</td>
+                                            <td>31-March</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Cloud Computing</td>
+                                            <td>2-April-2018</td>
+                                            <td>7-April-2018</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="add-topic-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog"> 
+            <div class="modal-content"> 
+                <div class="modal-header"> 
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                    <h4 class="modal-title">Add Topic</h4> 
+                </div> 
+                <form method="POST" id="add_topic">
+                <div class="modal-body"> 
+                    <div class="row"> 
+                        <div class="col-md-12"> 
+                            <div class="form-group"> 
+                                <label for="field-1" class="control-label">Topic Name</label> 
+                                <input type="text" class="form-control" id="field-1" placeholder="Ex.Machine Learning"> 
+                            </div> 
+                        </div>  
+                    </div> 
+                    <div class="row"> 
+                            <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Topic Date Range</label>
+                                <div class="input-daterange input-group" id="date-range">
+                                    <input type="text" class="form-control" name="start" />
+                                    <span class="input-group-addon bg-custom b-0 text-white">to</span>
+                                    <input type="text" class="form-control" name="end" />
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="modal-footer"> 
+                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button> 
+                    <button type="button" class="btn btn-info waves-effect waves-light">Add Topic</button> 
+                </div> 
+            </form>
+            </div> 
+        </div>
+    </div>
